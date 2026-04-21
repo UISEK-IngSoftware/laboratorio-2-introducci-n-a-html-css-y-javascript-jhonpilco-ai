@@ -1,0 +1,115 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+#foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Main */
+main {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Lista habilidades */
+#habilidades {
+    list-style: none;
+}
+
+#habilidades li {
+    background: #3498db;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* Elementos interactivos */
+#toggle-habilidades, #toggle-educacion {
+    cursor: pointer;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+#toggle-habilidades:hover, #toggle-educacion:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Clases JS */
+.oculto {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Responsive design para móviles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    #foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+    
+    #habilidades {
+        grid-template-columns: 1fr;
+    }
+    
+    footer a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
